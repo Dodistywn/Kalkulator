@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+<head>
+<style>
+    button:hover {
+        background-color: rgb(6, 0, 0);
+        color: rgb(205, 205, 205);
+        padding: auto;
+        cursor: pointer;
+    }
+    body {
+        background-color: rgb(107, 230, 255);
+    }
+    form {
+        width: 230px;
+        background-color: grey;
+        border: solid grey 5px;
+    }
+    p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <div>
+            <input type="text" placeholder="Masukkan angka" />
+            <select>
+            <option>+</option>
+            <option>-</option>
+            <option>x</option>
+            <option>/</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" placeholder="Masukkan angka" />
+            <button type="submit">Hitung</button>
+        </div>
+    </form>
+    <p>Hasil : <span id="hasil">0</span></p>
+
+<script src="script.js"></script>
+</body>
+</html>
